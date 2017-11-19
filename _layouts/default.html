@@ -18,6 +18,7 @@
 
   </head>
   <body>
+
       <div id="header">
         <nav>
           <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
@@ -29,6 +30,26 @@
         </nav>
       </div><!-- end header -->
 
+    
+    
+<div style="width:100%;">
+    <div style="margin-left:45px;">
+    <nav class="navbar navbar-default">
+    <div class="navbar-header">  
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+    {% for item in site.menu %}
+    <li><a href="{{ item.pagename }}">{{ item.name }}</a></li>
+    {% endfor %}
+     </ul>
+     <ul class="nav navbar-nav navbar-right"></ul>
+    </div>
+    </div>
+    </nav>
+    </div>
+</div>
+    
+    
     <div class="wrapper">
 
       <section>
